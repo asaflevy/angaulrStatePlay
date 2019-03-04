@@ -1,0 +1,13 @@
+:host{
+  .cv-product-container-inner{
+    display: flex;
+
+    & .cv-product-container__list{
+      min-width: 35vw;
+    }
+
+    & .cv-product-item-edit{
+      min-width: 30vw;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+:host {
+  .cv-control-panel-container {
+    display: flex;
+    margin: 10px;
+    max-width: 550px;
+
+    & .sorting-container, & .search-container {
+      margin-left: 5px;
+    }
+  }
+
+}

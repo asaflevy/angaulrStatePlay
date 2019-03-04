@@ -1,0 +1,65 @@
+<div class="edit-product-item-container">
+  <!--{{product$ | async | json}}-->
+  <div class="cv-product-image">
+    <img [width]="60" src="{{(product$ | async)?.imageUrl}}">
+  </div>
+  <form nz-form [formGroup]="productForm" class="" (ngSubmit)="submitForm()">
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired nzFor="name">Product Name</nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <nz-input-group>
+          <input type="text" nz-input formControlName="name" placeholder="name">
+        </nz-input-group>
+        <nz-form-explain *ngIf="productForm.get('name').dirty && productForm.get('name').errors">Please product name!
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired nzFor="description">Product description</nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <nz-input-group>
+          <input type="text" nz-input formControlName="description" placeholder="description">
+        </nz-input-group>
+        <nz-form-explain *ngIf="productForm.get('description').dirty && productForm.get('description').errors">Please
+          product description!
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired nzFor="description">Product Price</nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <nz-input-group>
+          <nz-input-number nz-input formControlName="price" placeholder="price" [nzMin]="0" [nzMax]="1000"
+                           [nzStep]="1"></nz-input-number>
+        </nz-input-group>
+        <nz-form-explain *ngIf="productForm.get('description').dirty && productForm.get('description').errors">Please
+          product description!
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired nzFor="description">Product Image</nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <nz-input-group>
+          <nz-input-group>
+            <input type="text" nz-input formControlName="imageUrl" placeholder="imageUrl">
+          </nz-input-group>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control>
+
+        <button nz-button class="login-form-button" [nzType]="'primary'">save</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</div>
+
+
+<ng-template #loading>
+  Loading Product...
+</ng-template>

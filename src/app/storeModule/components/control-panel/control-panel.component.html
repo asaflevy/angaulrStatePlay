@@ -1,0 +1,17 @@
+<div class="cv-control-panel-container">
+  <button nz-button nzType="primary" (click)="onAddClick()">Add</button>
+  <div class="search-container">
+    <nz-input-group [nzSuffix]="suffixIconSearch">
+      <input type="text" nz-input placeholder="input search text">
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <i nz-icon type="search"></i>
+    </ng-template>
+  </div>
+  <div class="sorting-container">
+    <label>sort by:</label>
+    <nz-select style="width: 200px;" nzShowSearch nzAllowClear nzPlaceHolder="search">
+
+    </nz-select>
+  </div>
+</div>

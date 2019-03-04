@@ -1,0 +1,27 @@
+[
+
+    {
+      "id":1,
+      "name": "Product -A-",
+      "description": "description for -A-",
+      "price":10,
+      "creationDate": "2/26/2019",
+      "imageUrl": "http://www.sparkawards.com/wp-content/uploads/2011/05/Product_Lg_Type-1024x791.jpg"
+    },
+    {
+      "id":2,
+      "name": "Product -B-",
+      "description": "description for -B-",
+      "price":110,
+      "creationDate": "2/26/2019",
+      "imageUrl": "http://www.sparkawards.com/wp-content/uploads/2011/05/Product_Lg_Type-1024x791.jpg"
+    },
+    {
+      "id":3,
+      "name": "Product -C-",
+      "description": "description for -C-",
+      "price":12,
+      "creationDate": "2/26/2019",
+      "imageUrl": "http://www.sparkawards.com/wp-content/uploads/2011/05/Product_Lg_Type-1024x791.jpg"
+    }
+  ]

@@ -1,0 +1,16 @@
+<div class="cv-product-container">
+  <cv-control-panel></cv-control-panel>
+  <div class="cv-product-container-inner">
+    <div class="cv-product-container__list">
+      <ul>
+        <li class="product-item"
+            *ngFor="let productItem of (productsData$ | async)">
+          <cv-product [productItem]="productItem"></cv-product>
+        </li>
+      </ul>
+    </div>
+    <div class="cv-product-item-edit">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

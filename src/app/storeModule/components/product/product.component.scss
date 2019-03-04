@@ -1,0 +1,30 @@
+:host {
+  .cv-product-item-container {
+    border: 1px solid;
+    display: flex;
+    max-width: 500px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      background: #fafafa;
+    }
+
+    & .product-item {
+      display: flex;
+    }
+
+    & .product-name-description {
+      margin-left: 10px;
+      & .product-name {
+        font-weight: 600;
+      }
+    }
+
+    & .delete-item {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+}

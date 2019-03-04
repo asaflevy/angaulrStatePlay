@@ -1,0 +1,8 @@
+:host {
+  .edit-product-item-container {
+
+    & .cv-product-image {
+      max-width: 40px;
+    }
+  }
+}

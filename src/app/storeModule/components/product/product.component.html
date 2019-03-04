@@ -1,0 +1,18 @@
+<div class="cv-product-item-container">
+  <a [routerLink]="['/edit',productItem?.id]">
+    <div class="product-item">
+      <div class="product-image">
+        <img width="40" height="40" [src]="productItem.imageUrl"/>
+      </div>
+      <div class="product-name-description">
+        <div class="product-name">{{productItem.name}}</div>
+        <div class="product-description">{{productItem.description}}</div>
+      </div>
+    </div>
+  </a>
+  <div class="delete-item">
+    <button nz-button nzType="danger" (click)="deleteItem(productItem.id)">Delete</button>
+  </div>
+</div>
+
+
